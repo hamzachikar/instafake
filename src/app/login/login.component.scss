@@ -1,0 +1,170 @@
+.container-xl{
+  position: relative;
+  height: 100%;
+  .col{
+    height: 100%;
+  }
+  .top{
+    height: 90%;
+    .content-c{
+      margin-top: 32px;
+      .content-r{
+        height: 100%;
+        .col{
+          height: fit-content;
+        }
+        .img-col{
+          .main-img{
+            .slider{
+              position: absolute;
+              background-color: gray;
+              width: 245px;
+              height: 434px;
+              top: 96px;
+              left: 164px;
+            }
+          }
+        }
+        .login-col{
+          margin-top: 12px;
+          .card{
+            width: 350px;
+            height: 377.8px;
+          }
+          .sign-in{
+            padding: 10px 0 10px 0;
+            .col{
+              .card{
+
+                .card-header{
+                  background-color: white;
+                  border: white;
+                  text-align: center;
+                  img{
+                    width: 60%;
+                  }
+                }
+                .card-body{
+                  .form-row{
+                    padding: 0;
+                    margin: 0 0 15px 0;
+                    .col{
+                      form{
+                        .form-group{
+                          height: fit-content;
+                          margin: 0;
+                          .field{
+                            width: 100%;
+                           margin-top: -1.25em !important;
+                           margin-bottom:-0.25em !important;
+
+                          }
+                        }
+
+                      }
+                    }
+                  }
+                  .divider{
+                    margin-bottom: 5px;
+                    .col-1{
+                      padding: 0;
+                      padding-top:1% ;
+                      margin: 0;
+                    }
+                    .col{
+                      p{
+                        position: relative;
+
+                        height: 15px;
+                        text-align:center;
+                        font-size: 17px;
+                        color: gray;
+                      }
+                      hr{
+                        border: none;
+                        height: 1px;
+                        /* Set the hr color */
+                        color: lightgray; /* old IE */
+                        background-color: lightgray; /* Modern Browsers */
+                      }
+                    }
+                  }
+                  .opt{
+                    text-align: center;
+                    .nav{
+                      .nav-item{
+                        .nav-link{
+                          margin-bottom: 10px;
+                          padding: 0 !important;
+                        }
+                        .face{
+                          color: #385185;
+                          font-weight: 500;
+                          font-size: 16px;
+                          letter-spacing: 0.2px;
+                          i{
+                            margin-right: 2px;
+                          }
+                        }
+                        .pass{
+                          font-size: 12px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .sign-up{
+            .col{
+              .card{
+                height: 62px;
+                align-items: center;
+                .card-body{
+                  width: 67%;
+                  p{
+                    position: absolute;
+                    color: gray;
+                  }
+                  a{
+                    font-weight: 600;
+                    float: right;
+                  }
+                }
+              }
+            }
+          }
+          .apps{
+            .col{
+              .card{
+                height: fit-content;
+                border: 0;
+                background-color: transparent;
+                .card-body{
+                  text-align: center;
+                  h4{
+                    height:20px;
+                  }
+                  .nav{
+                    .nav-item{
+
+                      .nav-link{
+                        margin: 5px;
+                        padding: 0;
+                        img{
+                         width: 100%;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
