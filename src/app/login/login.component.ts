@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
+  signInMode:boolean=false;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  onChangeMode(){
+    this.signInMode=!this.signInMode
+  }
 }

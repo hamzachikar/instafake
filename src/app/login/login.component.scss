@@ -5,43 +5,89 @@
     height: 100%;
   }
   .top{
-    height: 90%;
+    min-height: 90%;
+    height: fit-content;
     .content-c{
-      margin-top: 32px;
+      width: fit-content;
+      margin-top: 20px;
+
       .content-r{
-        height: 100%;
+      height: 100%;
+
         .col{
           height: fit-content;
         }
         .img-col{
+          width: fit-content;
           .main-img{
             .slider{
               position: absolute;
               background-color: gray;
-              width: 245px;
-              height: 434px;
-              top: 96px;
-              left: 164px;
+              width: 239px;
+              height: 429px;
+              top: 99px;
+              left: 166px;
+              img{
+                width: 100%;
+                height: 100%;
+              }
             }
           }
         }
         .login-col{
+          width: fit-content;
+          text-align: center;
           margin-top: 12px;
           .card{
             width: 350px;
-            height: 377.8px;
           }
           .sign-in{
+            width: fit-content;
             padding: 10px 0 10px 0;
             .col{
               .card{
+                .divider{
+                  .col-1{
+                    padding: 0;
+                    padding-top:1% ;
+                    margin: 0;
+                  }
+                  .col{
+                    p{
+                      position: relative;
 
+                      height: 15px;
+                      text-align:center;
+                      font-size: 17px;
+                      color: gray;
+                    }
+                    hr{
+                      border: none;
+                      height: 1px;
+                      /* Set the hr color */
+                      color: lightgray; /* old IE */
+                      background-color: lightgray; /* Modern Browsers */
+                    }
+                  }
+                }
                 .card-header{
                   background-color: white;
                   border: white;
                   text-align: center;
                   img{
                     width: 60%;
+                  }
+                  .intro{
+                    .col{
+
+                      h1{
+                        width: 97%;
+                        text-align: center;
+                        color: gray;
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                      }
+                    }
                   }
                 }
                 .card-body{
@@ -64,30 +110,10 @@
                       }
                     }
                   }
-                  .divider{
-                    margin-bottom: 5px;
-                    .col-1{
-                      padding: 0;
-                      padding-top:1% ;
-                      margin: 0;
-                    }
-                    .col{
-                      p{
-                        position: relative;
+                  .term-polic{
+                    color: gray;
+                    text-align: center;
 
-                        height: 15px;
-                        text-align:center;
-                        font-size: 17px;
-                        color: gray;
-                      }
-                      hr{
-                        border: none;
-                        height: 1px;
-                        /* Set the hr color */
-                        color: lightgray; /* old IE */
-                        background-color: lightgray; /* Modern Browsers */
-                      }
-                    }
                   }
                   .opt{
                     text-align: center;
@@ -117,6 +143,7 @@
             }
           }
           .sign-up{
+            width: fit-content;
             .col{
               .card{
                 height: 62px;
@@ -126,16 +153,21 @@
                   p{
                     position: absolute;
                     color: gray;
+                    span{
+                      font-weight: 600;
+                      cursor: pointer;
+                      color: #0095F6;
+                    }
                   }
                   a{
-                    font-weight: 600;
-                    float: right;
+
                   }
                 }
               }
             }
           }
           .apps{
+            width: fit-content;
             .col{
               .card{
                 height: fit-content;
@@ -165,6 +197,36 @@
           }
         }
       }
+    }
+  }
+  .bottom{
+    height: 10%;
+    padding: 0;
+    .col{
+      .navbar{
+        .disabled{
+          position: absolute;
+          right: 0;
+          font-size: 12px;
+          font-weight: 500;
+          padding: 0;
+
+        }
+        .nav{
+          width:fit-content;
+          .nav-item{
+            .nav-link{
+              color:#00376B;
+              font-size:12px;
+              padding:0 16px 0 0;
+              font-weight: 450;
+            }
+
+          }
+
+        }
+      }
+
     }
   }
 }

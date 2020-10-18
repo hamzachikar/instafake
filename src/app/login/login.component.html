@@ -1,19 +1,19 @@
 <div class="container-xl">
   <div class="row top justify-content-center">
-    <div class="col  col-lg-10 content-c">
-      <div class="row content-r">
-        <div class="col img-col">
+    <div class="col  content-c">
+      <div class="row content-r justify-content-center">
+        <div class="col col-5 img-col" *ngIf="signInMode">
           <div class="main-img">
             <img src="../../assets/images/insta-mob.png" alt="">
             <div class="slider">
-
+              <img src="../../assets/images/insta3.jpg" alt="">
             </div>
           </div>
         </div>
-        <div class="col login-col">
-          <div class="row sign-in">
+        <div class="col col-5 align-self-center login-col">
+          <div class="row sign-in justify-content-center">
             <div class="col">
-              <div class="card">
+              <div class="card" *ngIf="signInMode">
                 <div class="card-header">
                   <img src="../../assets/images/Instagram_logo.svg" alt="">
                 </div>
@@ -58,13 +58,73 @@
                     </div>
                 </div>
               </div>
+              <div class="card" *ngIf="!signInMode">
+                <div class="card-header">
+                  <img src="../../assets/images/Instagram_logo.svg" alt="">
+                  <div class="row intro">
+                    <div class="col">
+                      <h1>Sign up to see photos and videos from your friends.</h1>
+                      <button type="button" class="btn btn-primary btn-block">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>Log in with Facebook
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row divider justify-content-center">
+                  <div class="col col-5">
+                    <hr>
+                  </div>
+                  <div class="col col-1"><p>or</p></div>
+                  <div class="col col-5">
+                    <hr>
+                  </div>
+                </div>
+                <div class="card-body">
+                    <div class="row form-row">
+                      <div class="col">
+                        <form>
+                          <div class="form-group">
+                            <mat-form-field  class="field" appearance="outline">
+                              <mat-label>Mobile Number or Email</mat-label>
+                              <input matInput>
+                            </mat-form-field>
+                            <mat-form-field  class="field" appearance="outline">
+                              <mat-label>Full Name</mat-label>
+                              <input type="password" matInput>
+                            </mat-form-field>
+                            <mat-form-field  class="field" appearance="outline">
+                              <mat-label>Username</mat-label>
+                              <input matInput>
+                            </mat-form-field>
+                            <mat-form-field  class="field" appearance="outline">
+                              <mat-label>Password</mat-label>
+                              <input matInput>
+                            </mat-form-field>
+                          </div>
+                          <button type="button" class="btn btn-primary btn-block">Next</button>
+                        </form>
+                      </div>
+
+                    </div>
+                    <div class="row term-polic">
+                      <div class="col">
+                        By signing up, you agree to our Terms . Learn how we collect, use and share your data in our Data Policy and how we use cookies and similar technology in our Cookies Policy .
+                      </div>
+                    </div>
+
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row sign-up">
+          <div class="row sign-up justify-content-center">
             <div class="col">
               <div class="card">
-                <div class="card-body">
-                  <p>Don't have an account?</p> <a href="#">Sign up</a>
+                <div class="card-body" *ngIf="signInMode">
+                  <p>Don't have an account?<span (click)="onChangeMode()"> Sign up</span></p>
+                </div>
+                <div class="card-body" *ngIf="!signInMode">
+                  <p>Have an account? <span (click)="onChangeMode()"> Sign in</span></p>
                 </div>
               </div>
             </div>
@@ -95,8 +155,46 @@
       </div>
     </div>
   </div>
-  <div class="row botton">
+  <div class="row bottom">
     <div class="col">
+      <nav class ="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HELP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRESS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">API</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">JOBS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRIVACY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TERMS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LOCATIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TOP ACCOUNTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HASHTAGS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LANGUAGE</a>
+          </li>
+        </ul>
+        <a class="nav-link disabled" href="#">© 2020 INSTAGRAM FROM HAMZA</a>
+      </nav>
 
     </div>
   </div>
