@@ -45,4 +45,4 @@ $instafake-theme: mat-light-theme((
 html, body { height: 100%}
 
 html, body { height: 100%;  background-color: #FAFAFA;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; *{button,input{  outline: none;}}}

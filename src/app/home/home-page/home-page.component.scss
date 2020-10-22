@@ -1,4 +1,26 @@
-.container{
-  height: 700px;
-  background-color: grey;
+.row{
+  padding-top: 30px;
+  .side-nav-blank{
+    page-break-after: 0;
+    margin: 0;
+    .sideNav{
+      position: fixed;
+      width: 293px;
+      height:fit-content;
+      float: right;
+    }
+  }
+  .line-time{
+    max-width: 614px;
+    height:fit-content;
+    .row{
+      padding: 0;
+    }
+    .storie-row{
+      margin: 0 0 20px 0;
+    }
+    .post-row{
+      margin: 0 0 50px 0;
+    }
+  }
 }

@@ -1,0 +1,144 @@
+.card{
+
+  .card-header{
+    height: 60px;
+    background-color: transparent;
+    .row{
+      height: 100%;
+
+      .col{
+        padding: 0;
+      }
+      .avatar-col{
+        .avatar-container{
+          width: 37px;
+          height: 37px;
+          padding: 2.1px;
+          margin-left: 10px;
+          border-radius: 50%;
+          background: #E0E0E0;
+
+          img{
+            width: 32px;
+            height: 32px;
+            border:2px solid white;
+            border-radius: 50%;
+          }
+        }
+        .active{
+          background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+          background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+        }
+
+      }
+      .name-col{
+        h4{
+          padding: 0;
+          margin: 0;
+          color: black;
+          font-weight: 400;
+          margin: 5px 0 0 11px;
+        }
+      }
+    }
+  }
+  .card-body{
+    padding: 0;
+    .article-row{
+      min-height: 400px;
+      .col{
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+    }
+    .react-row{
+      height: 40px;
+      .col{
+        .navbar{
+          width: 100%;
+          .lnav{
+            .nav-item{
+              margin: 0 15px 0 0;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  .card-footer{
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+
+    .row{
+      margin: 0 0 0 0;
+    }
+    .likes-row{
+
+      .col{
+        h4{
+          padding: 0;
+          margin: 0;
+          color: black;
+          font-weight: 500;
+        }
+      }
+
+    }
+    .descr-row{
+      .col{
+        p{
+          margin-bottom: 5px;
+          span{
+            font-weight: 500;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .comment-row{
+      height: fit-content;
+      .col{
+        p{
+          margin-bottom: 5px;
+          span{
+            font-weight: 500;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .comment-input{
+      min-height: 56px;
+      height: fit-content;
+      border-top: 1px solid #EFEFEF;
+      .col{
+        form{
+          margin-top: 10px;
+          .btn{
+            position: absolute;
+            top: 12px;
+            right: 0;
+          }
+          .form-control{
+            position: relative;
+            margin: 0;
+            border: 0;
+            height: fit-content;
+            width: 70%;
+            resize: none;
+          }
+          .form-control:focus{
+            outline: none !important;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+}
