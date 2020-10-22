@@ -1,0 +1,23 @@
+.container-fluid{
+  .topNav{
+    background-color: white;
+    height: fit-content;
+    border-bottom:0.5px solid rgba(128, 128, 128, 0.473) ;
+  }
+  .row{
+    padding-top: 30px;
+    .side-nav-blank{
+      page-break-after: 0;
+      margin: 0;
+      .sideNav{
+        position: fixed;
+        width: 293px;
+        height:fit-content;
+        float: right;
+      }
+    }
+    .line-time{
+      max-width: 614px;
+    }
+  }
+}

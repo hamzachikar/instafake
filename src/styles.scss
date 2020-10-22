@@ -38,6 +38,10 @@ $instafake-theme: mat-light-theme((
   font-family: 'Pacifico';
   src: url(../src/assets/fonts/Pacifico-Regular.ttf);
 }
+@font-face{
+  font-family: 'Raleway-thin';
+  src: url(../src/assets/fonts/Raleway-Thin.ttf);
+}
 html, body { height: 100%}
 
 html, body { height: 100%;  background-color: #FAFAFA;}

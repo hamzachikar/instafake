@@ -1,0 +1,63 @@
+.card{
+  width: 293px;
+  border: 0;
+  background-color: transparent;
+  .card-header{
+    border: 0;
+    height: 60px;
+    background-color: transparent;
+    .row{
+      .col{
+        width: fit-content !important;
+        margin: 0;
+        padding: 0;
+      }
+      .left-col{
+
+        .avatar{
+          cursor: pointer;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          border:1px solid rgba(128, 128, 128, 0.404);
+        }
+      }
+      .right-col{
+        padding-top: 5px;
+        padding-left: 10px;
+        h4{
+          padding: 0;
+          margin: 0;
+        }
+        .alias{
+          color: black;
+          font-weight: 500;
+        }
+        .name{
+          color:#939393 ;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+  .card-body{
+    .title{
+      .col{
+        margin: 0;
+        padding:0;
+        h3{
+          color: #939393;
+          font-weight: 500;
+          width: 100%;
+          font-size: 14px;
+          span{
+            cursor: pointer;
+            float: right;
+            color: black;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
