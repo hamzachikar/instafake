@@ -1,5 +1,132 @@
 <div class="card">
-  <div class="card-body">
+  <div class="card-body" #stories>
+    <div class="content">
+      <div class="storie">
+        <div class="row avatar">
+          <div class="col">
+            <div class="wrapper active">
+              <img src="../../../../assets/images/hamza.jpg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="row alias">
+          <div class="col">
+            <p>chikar.hamza</p>
+          </div>
 
+        </div>
+      </div>
+      <div class="storie">
+        <div class="row avatar">
+          <div class="col">
+            <div class="wrapper active">
+              <img src="../../../../assets/images/user1.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="row alias">
+          <div class="col">
+            <p>user1</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="storie">
+        <div class="row avatar">
+          <div class="col">
+            <div class="wrapper active">
+              <img src="../../../../assets/images/omen.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="row alias">
+          <div class="col">
+            <p>hp.omen</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="storie">
+        <div class="row avatar">
+          <div class="col">
+            <div class="wrapper">
+              <img src="../../../../assets/images/user1.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="row alias">
+          <div class="col">
+            <p>user2</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="storie">
+        <div class="row avatar">
+          <div class="col">
+            <div class="wrapper">
+              <img src="../../../../assets/images/user1.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="row alias">
+          <div class="col">
+            <p>user3</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="storie">
+        <div class="row avatar">
+          <div class="col">
+            <div class="wrapper">
+              <img src="../../../../assets/images/user1.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="row alias">
+          <div class="col">
+            <p>user4</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="storie">
+        <div class="row avatar">
+          <div class="col">
+            <div class="wrapper">
+              <img src="../../../../assets/images/user1.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="row alias">
+          <div class="col">
+            <p>user5</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="storie">
+        <div class="row avatar">
+          <div class="col">
+            <div class="wrapper">
+              <img src="../../../../assets/images/user1.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="row alias">
+          <div class="col">
+            <p>user6</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <button *ngIf="!(storieScroll==0)" (click)="onScroll('right')" type="button" class="btn btn-light left">
+      <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </button>
+    <button type="button" (click)="onScroll('left')" class="btn btn-light right">
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </button>
   </div>
 </div>

@@ -1,3 +1,77 @@
 .card{
   height: 118px;
+  .card-body{
+    padding: 10px 0 0 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    .btn{
+      position: absolute;
+      top: 43px;
+      width:25px;
+      height: 25px;
+      border-radius: 50%;
+      padding: 0;
+      i{
+        font-size: 20px;
+      }
+    }
+    .left{
+      left: 10px;
+    }
+    .right{
+      right: 10px;
+    }
+    .content{
+      position: relative;
+      width:fit-content;
+      display: flex;
+      .storie{
+        width: 90px;
+        .row{
+          padding: 10px 0 0 0;
+          margin: 0;
+          .col{
+            padding: 0;
+            text-align: center;
+            align-items: center;
+            width: fit-content !important;
+          }
+        }
+        .avatar{
+          height:fit-content;
+          .wrapper{
+            position: relative;
+            width: 65px;
+            margin-left: 10px;
+            height: 65px;
+            border-radius: 50%;
+          background-color: gray;
+            img{
+              width: 60px;
+              margin: 2.5px;
+              height: 60px;
+              border: 1.5px solid white;
+              border-radius:50%;
+            }
+          }
+          .active{
+            background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+            background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+          }
+        }
+        .alias{
+          padding: 0;
+          p{
+            margin: 0;
+            font-size: 12px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+  .card-body::-webkit-scrollbar {
+    width: 0px;
+    height: 0;
+  }
 }
