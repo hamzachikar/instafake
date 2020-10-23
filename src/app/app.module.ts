@@ -16,6 +16,7 @@ import { HomePageComponent } from './home/home-page/home-page.component';
 import { SideNavComponent } from './home/side-nav/side-nav.component';
 import { StorieNavComponent } from './home/home-page/storie-nav/storie-nav.component';
 import { PostCardComponent } from './home/home-page/post-card/post-card.component';
+import { SugstCardComponent } from './components/sugst-card/sugst-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { PostCardComponent } from './home/home-page/post-card/post-card.componen
     HomePageComponent,
     SideNavComponent,
     StorieNavComponent,
-    PostCardComponent
+    PostCardComponent,
+    SugstCardComponent
   ],
   imports: [
     BrowserModule,

@@ -13,9 +13,43 @@
   <div class="card-body">
     <div class="row title">
       <div class="col ">
-        <h3>Suggestions pour vous <span>Voir tout</span></h3>
+        <h3>Suggestions pour vous <span><a href="#">Voir tout</a></span></h3>
       </div>
-
     </div>
+    <div class="row sugst-cards" *ngFor="let element of aliasSugCard">
+      <div class="col">
+        <sugst-card
+          [alias]="element.alias"
+          [activeStorie]="element.storie"
+        ></sugst-card>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <p>
+      <a href="">About</a>
+      .
+      <a href="">help</a>
+      .
+      <a href="">Press</a>
+      .
+      <a href="">API</a>
+      .
+      <a href="">Emplois</a>
+      .
+      <a href="">Confidential</a>
+      .
+      <a href="">Conditions</a>
+      .
+      <a href="">Spots</a>
+      .
+      <a href="">Accounts</a>
+      .
+      <a href="">Hashtags</a>
+      .
+      <a href="">language</a>
+
+    </p>
+    <h6>© 2020 INSTAFAKE BY HAMZA</h6>
   </div>
 </div>

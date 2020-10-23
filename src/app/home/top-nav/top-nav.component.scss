@@ -29,6 +29,12 @@
 
         .nav-link{
           padding: 0 10px 0 10px;
+          img{
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 0.5px solid rgba(0, 0, 0, 0.486);
+          }
         }
       }
     }
