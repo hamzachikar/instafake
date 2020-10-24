@@ -1,0 +1,29 @@
+.row{
+  .col{
+    border: 1px solid black;
+    .profil-header{
+      height: 250px;
+      .avatar-col{
+        padding:2% 6% ;
+        .wrapper{
+          position: relative;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          img{
+            width: 190px;
+            height: 190px;
+            margin: 5px;
+            border: 2px solid white;
+            border-radius: 50%;
+          }
+
+        }
+        .active{
+          background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+          background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+        }
+      }
+    }
+  }
+}

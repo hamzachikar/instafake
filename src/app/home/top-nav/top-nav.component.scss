@@ -29,11 +29,36 @@
 
         .nav-link{
           padding: 0 10px 0 10px;
-          img{
+          .avatar{
             width: 22px;
             height: 22px;
             border-radius: 50%;
             border: 0.5px solid rgba(0, 0, 0, 0.486);
+          }
+
+        }
+        .dropdown-menu{
+          margin-top: 15px;
+          border-radius: 5px;
+          padding: 0;
+          -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+               box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+          a{
+            width:230px;
+            height: 37px;
+            padding: 8px 16px 8px 16px;
+            svg{
+              margin-right: 12px;
+            }
+            span{
+              font-size: 14px;
+              font-weight: 200;
+            }
+          }
+          a:focus{
+            background-color:rgba(128, 128, 128, 0.158) ;
+            color: black;
           }
         }
       }
