@@ -1,200 +1,228 @@
 .container-xl{
   position: relative;
   height: 100%;
+  padding: 0;
   .col{
     height: 100%;
   }
   .top{
     min-height: 90%;
     height: fit-content;
-    .content-c{
-      width: fit-content;
-      margin-top: 20px;
 
-      .content-r{
-      height: 100%;
-
-        .col{
-          height: fit-content;
-        }
-        .img-col{
-          width: fit-content;
-          .main-img{
-            .slider{
-              position: absolute;
-              background-color: gray;
+    .blank-col{
+      page-break-after:5;
+      margin: 0;
+      .img-col{
+        position: fixed;
+        float: left;
+        top:5%;
+        left:20%;
+        width: fit-content;
+        .main-img{
+          .slider{
+            position: absolute;
+            background-color: gray;
+            width: 239px;
+            height: 429px;
+            top: 98.5px;
+            left: 151px;
+            img{
               width: 239px;
               height: 429px;
-              top: 99px;
-              left: 166px;
-              img{
-                width: 239px;
-                height: 429px;
-              }
             }
           }
         }
-        .login-col{
-          text-align: center;
-          margin-top: 12px;
+      }
+    }
+
+    .col{
+      height: fit-content;
+    }
+    .login-col{
+      margin-top: 50px;
+      .row{
+        .col{
+          position: relative;
+          max-width:fit-content;
+        }
+      }
+      .card{
+        position: relative;
+        width: 350px;
+
+      }
+      .sign-in{
+
+        padding: 10px 0 10px 0;
+        .col{
           .card{
-            width: 350px;
-          }
-          .sign-in{
-            width: fit-content;
-            padding: 10px 0 10px 0;
-            .col{
-              .card{
-                .divider{
-                  .col-1{
-                    padding: 0;
-                    padding-top:1% ;
-                    margin: 0;
-                  }
-                  .col{
-                    p{
-                      position: relative;
-
-                      height: 15px;
-                      text-align:center;
-                      font-size: 17px;
-                      color: gray;
-                    }
-                    hr{
-                      border: none;
-                      height: 1px;
-                      /* Set the hr color */
-                      color: lightgray; /* old IE */
-                      background-color: lightgray; /* Modern Browsers */
-                    }
-                  }
+            .divider{
+              .col-1{
+                padding: 0;
+                padding-top:1% ;
+                margin: 0;
+              }
+              .col{
+                p{
+                  position: relative;
+                  height: 15px;
+                  text-align:center;
+                  font-size: 17px;
+                  color: gray;
                 }
-                .card-header{
-                  background-color: white;
-                  border: white;
-                  text-align: center;
-                  img{
-                    width: 60%;
-                  }
-                  .intro{
-                    .col{
-
-                      h1{
-                        width: 97%;
-                        text-align: center;
-                        color: gray;
-                        font-size: 18px;
-                        margin-bottom: 5px;
-                      }
-                    }
-                  }
+                hr{
+                  border: none;
+                  height: 1px;
+                  /* Set the hr color */
+                  color: lightgray; /* old IE */
+                  background-color: lightgray; /* Modern Browsers */
                 }
-                .card-body{
-                  .form-row{
-                    padding: 0;
-                    margin: 0 0 15px 0;
-                    .col{
-                      form{
-                        .form-group{
-                          height: fit-content;
-                          margin: 0;
-                          .field{
-                            width: 100%;
-                           margin-top: -1.25em !important;
-                           margin-bottom:-0.25em !important;
+              }
+            }
+            .card-header{
+              background-color: white;
+              border: white;
+              text-align: center;
+              img{
+                width: 60%;
+              }
+              .intro{
+                .col{
 
-                          }
-                        }
-
-                      }
-                    }
-                  }
-                  .term-polic{
+                  h1{
+                    width: 97%;
+                    text-align: center;
                     color: gray;
-                    text-align: center;
-
-                  }
-                  .opt{
-                    text-align: center;
-                    .nav{
-                      .nav-item{
-                        .nav-link{
-                          margin-bottom: 10px;
-                          padding: 0 !important;
-                        }
-                        .face{
-                          color: #385185;
-                          font-weight: 500;
-                          font-size: 16px;
-                          letter-spacing: 0.2px;
-                          i{
-                            margin-right: 2px;
-                          }
-                        }
-                        .pass{
-                          font-size: 12px;
-                        }
-                      }
-                    }
+                    font-size: 18px;
+                    margin-bottom: 5px;
                   }
                 }
               }
             }
-          }
-          .sign-up{
-            width: fit-content;
-            .col{
-              .card{
-                height: 62px;
-                align-items: center;
-                .card-body{
-                  width: 67%;
-                  p{
-                    position: absolute;
-                    color: gray;
-                    span{
-                      font-weight: 600;
-                      cursor: pointer;
-                      color: #0095F6;
-                    }
-                  }
-                  a{
+            .card-body{
+              .form-row{
+                padding: 0;
+                margin: 0 0 15px 0;
+                .col{
+                  form{
+                    .form-group{
+                      height: fit-content;
+                      margin: 0;
+                      .field{
+                        width: 100%;
+                       margin-top: -1.25em !important;
+                       margin-bottom:-0.25em !important;
 
-                  }
-                }
-              }
-            }
-          }
-          .apps{
-            width: fit-content;
-            .col{
-              .card{
-                height: fit-content;
-                border: 0;
-                background-color: transparent;
-                .card-body{
-                  text-align: center;
-                  h4{
-                    height:20px;
-                  }
-                  .nav{
-                    .nav-item{
-
-                      .nav-link{
-                        margin: 5px;
-                        padding: 0;
-                        img{
-                         width: 100%;
-                        }
                       }
                     }
+
                   }
                 }
               }
+              .term-polic{
+                color: gray;
+                text-align: center;
 
+              }
+              .opt{
+                text-align: center;
+                .nav{
+                  .nav-item{
+                    .nav-link{
+                      margin-bottom: 10px;
+                      padding: 0 !important;
+                    }
+                    .face{
+                      color: #385185;
+                      font-weight: 500;
+                      font-size: 16px;
+                      letter-spacing: 0.2px;
+                      i{
+                        margin-right: 2px;
+                      }
+                    }
+                    .pass{
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
             }
           }
         }
+      }
+      .sign-up{
+        .col{
+          .card{
+            height: 62px;
+            align-items: center;
+            .card-body{
+              width: 67%;
+              p{
+                position: absolute;
+                color: gray;
+                span{
+                  font-weight: 600;
+                  cursor: pointer;
+                  color: #0095F6;
+                }
+              }
+            }
+          }
+        }
+      }
+      .apps{
+        .col{
+          .card{
+            height: fit-content;
+            border: 0;
+            background-color: transparent;
+            .card-body{
+              text-align: center;
+              h4{
+                height:20px;
+              }
+              .nav{
+                .nav-item{
+
+                  .nav-link{
+                    margin: 5px;
+                    padding: 0;
+                    img{
+                     width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+    @media screen and (max-width:1300px) {
+      .blank-col{
+
+        .img-col{
+          left:15%;
+          width: fit-content;
+
+        }
+      }
+    }
+    @media screen and (max-width:1300px) {
+      .blank-col{
+
+        .img-col{
+          left:15%;
+          width: fit-content;
+
+        }
+      }
+    }
+    @media screen and (max-width:1200px){
+      .login-col{
+        background-color:  #FAFAFA;
       }
     }
   }

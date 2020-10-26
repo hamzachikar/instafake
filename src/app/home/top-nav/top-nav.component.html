@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container" (window:resize)="onResize($event)" >
   <nav class="navbar navbar-light bg-transparent">
     <a class="navbar-brand" href="#">
       <img src="../../../assets/images/Instagram_logo.svg" style="width: 110px;" alt="" srcset="">
     </a>
-    <ul class="nav justify-content-center">
+    <ul class="nav justify-content-center" *ngIf="showSearch">
       <li class="nav-item">
         <div class="search">
           <input type="text" class="search" placeholder="Search" />

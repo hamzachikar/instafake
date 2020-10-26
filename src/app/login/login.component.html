@@ -1,84 +1,51 @@
-<div class="container-xl" (window:resize)="onResize($event)">
-  <div class="row top justify-content-center">
-    <div class="col  content-c">
-      <div class="row content-r justify-content-center">
-        <div class="col col-5 img-col"    *ngIf="signInMode && widthImgShow">
-          <div class="main-img">
-            <img src="../../assets/images/insta-mob.png" alt="">
-            <div class="slider">
-              <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item">
-                      <img src="../../assets/images/insta3.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item active">
-                    <img src="../../assets/images/insta2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../../assets/images/insta1.jpg" class="d-block w-100" alt="...">
+<div class="container-xl">
+  <div class="row top" [class]="signInMode?' justify-content-end':' justify-content-center'" >
+    <div class="blank-col col-xl-6" *ngIf="signInMode">
+      <div class="img-col" >
+        <div class="main-img">
+          <img src="../../assets/images/insta-mob.png" alt="">
+          <div class="slider">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="../../assets/images/insta3.jpg" class="d-block w-100" alt="...">
                 </div>
+                <div class="carousel-item active">
+                  <img src="../../assets/images/insta2.jpg" class="d-block w-100" alt="...">
                 </div>
+                <div class="carousel-item">
+                  <img src="../../assets/images/insta1.jpg" class="d-block w-100" alt="...">
+              </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col align-self-center login-col" [class]="widthImgShow?'col-5':'col-12'">
-          <div class="row sign-in justify-content-center">
-            <div class="col">
-              <div class="card" *ngIf="signInMode">
-                <div class="card-header">
-                  <img src="../../assets/images/Instagram_logo.svg" alt="">
-                </div>
-                <div class="card-body">
-                    <div class="row form-row">
-                      <div class="col">
-                        <form  [formGroup]="signInForm" (ngSubmit)="onSubmit()">
-                          <div class="form-group"  formGroupName="account">
-                            <mat-form-field  class="field"  appearance="outline">
-                              <mat-label>Phone number, username, or email</mat-label>
-                              <input matInput  id="username" formControlName="username">
-                            </mat-form-field>
-                            <mat-form-field  class="field" appearance="outline">
-                              <mat-label>password</mat-label>
-                              <input type="password" matInput  id="password" formControlName="password">
-                            </mat-form-field>
-                          </div>
-                          <button type="submit" [class]="!signInForm.valid?'disabled':''" class="btn btn-primary btn-block">Log In</button>
-                        </form>
-                      </div>
+      </div>
+    </div>
 
-                    </div>
-                    <div class="row divider justify-content-center">
-                      <div class="col col-5">
-                        <hr>
+    <div class="col col-xl-8 login-col">
+      <div class="row justify-content-center sign-in">
+        <div class="col">
+          <div class="card" *ngIf="signInMode">
+            <div class="card-header">
+              <img src="../../assets/images/Instagram_logo.svg" alt="">
+            </div>
+            <div class="card-body">
+                <div class="row form-row">
+                  <div class="col">
+                    <form  [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+                      <div class="form-group"  formGroupName="account">
+                        <mat-form-field  class="field"  appearance="outline">
+                          <mat-label>Phone number, username, or email</mat-label>
+                          <input matInput  id="username" formControlName="username">
+                        </mat-form-field>
+                        <mat-form-field  class="field" appearance="outline">
+                          <mat-label>password</mat-label>
+                          <input type="password" matInput  id="password" formControlName="password">
+                        </mat-form-field>
                       </div>
-                      <div class="col col-1"><p>or</p></div>
-                      <div class="col col-5">
-                        <hr>
-                      </div>
-                    </div>
-                    <div class="row opt justify-content-center">
-                      <ul class="nav flex-column">
-                        <li class="nav-item">
-                          <a class="nav-link face" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>Log in with Facebook</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link pass" href="#">Forgot password?</a>
-                        </li>
-                      </ul>
-                    </div>
-                </div>
-              </div>
-              <div class="card" *ngIf="!signInMode">
-                <div class="card-header">
-                  <img src="../../assets/images/Instagram_logo.svg" alt="">
-                  <div class="row intro">
-                    <div class="col">
-                      <h1>Sign up to see photos and videos from your friends.</h1>
-                      <button type="button" class="btn btn-primary btn-block">
-                        <i class="fa fa-facebook-official" aria-hidden="true"></i>Log in with Facebook
-                      </button>
-                    </div>
+                      <button type="submit" [class]="!signInForm.valid?'disabled':''" class="btn btn-primary btn-block">Log In</button>
+                    </form>
                   </div>
 
                 </div>
@@ -91,79 +58,111 @@
                     <hr>
                   </div>
                 </div>
-                <div class="card-body">
-                    <div class="row form-row">
-                      <div class="col">
-                        <form  [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
-                          <div class="form-group" formGroupName="userDetail">
-                            <mat-form-field  class="field" appearance="outline">
-                              <mat-label>Mobile Number or Email</mat-label>
-                              <input matInput id="emailOrMob" formControlName="emailOrMob">
-                            </mat-form-field>
-                            <mat-form-field  class="field" appearance="outline">
-                              <mat-label>Full Name</mat-label>
-                              <input type="text" matInput id="name" formControlName="name">
-                            </mat-form-field>
-                          </div>
-                          <div class="form-group" formGroupName="account">
-                            <mat-form-field  class="field" appearance="outline">
-                              <mat-label>Username</mat-label>
-                              <input matInput id="usernameS" formControlName="username">
-                            </mat-form-field>
-                            <mat-form-field  class="field" appearance="outline">
-                              <mat-label>Password</mat-label>
-                              <input matInput type="password" id="passwordS" formControlName="password">
-                            </mat-form-field>
-                          </div>
-                          <button type="submit" [class]="!signUpForm.valid?'disabled':''" class="btn btn-primary btn-block">Next</button>
-                        </form>
-                      </div>
-
-                    </div>
-                    <div class="row term-polic">
-                      <div class="col">
-                        By signing up, you agree to our Terms . Learn how we collect, use and share your data in our Data Policy and how we use cookies and similar technology in our Cookies Policy .
-                      </div>
-                    </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row sign-up justify-content-center">
-            <div class="col">
-              <div class="card">
-                <div class="card-body" *ngIf="signInMode">
-                  <p>Don't have an account?<span (click)="onChangeMode()"> Sign up</span></p>
-                </div>
-                <div class="card-body" *ngIf="!signInMode">
-                  <p>Have an account? <span (click)="onChangeMode()"> Sign in</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row apps">
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <h4>Get the app</h4>
-                  <ul class="nav nav-pills  nav-justified">
+                <div class="row opt justify-content-center">
+                  <ul class="nav flex-column">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
-                        <img src="../../assets/images/apple.png" alt="">
-                      </a>
+                      <a class="nav-link face" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>Log in with Facebook</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
-                        <img src="../../assets/images/android.png" alt="">
-                      </a>
+                      <a class="nav-link pass" href="#">Forgot password?</a>
                     </li>
                   </ul>
                 </div>
+            </div>
+          </div>
+          <div class="card" *ngIf="!signInMode">
+            <div class="card-header">
+              <img src="../../assets/images/Instagram_logo.svg" alt="">
+              <div class="row intro">
+                <div class="col">
+                  <h1>Sign up to see photos and videos from your friends.</h1>
+                  <button type="button" class="btn btn-primary btn-block">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>Log in with Facebook
+                  </button>
+                </div>
               </div>
 
             </div>
+            <div class="row divider justify-content-center">
+              <div class="col col-5">
+                <hr>
+              </div>
+              <div class="col col-1"><p>or</p></div>
+              <div class="col col-5">
+                <hr>
+              </div>
+            </div>
+            <div class="card-body">
+                <div class="row form-row">
+                  <div class="col">
+                    <form  [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+                      <div class="form-group" formGroupName="userDetail">
+                        <mat-form-field  class="field" appearance="outline">
+                          <mat-label>Mobile Number or Email</mat-label>
+                          <input matInput id="emailOrMob" formControlName="emailOrMob">
+                        </mat-form-field>
+                        <mat-form-field  class="field" appearance="outline">
+                          <mat-label>Full Name</mat-label>
+                          <input type="text" matInput id="name" formControlName="name">
+                        </mat-form-field>
+                      </div>
+                      <div class="form-group" formGroupName="account">
+                        <mat-form-field  class="field" appearance="outline">
+                          <mat-label>Username</mat-label>
+                          <input matInput id="usernameS" formControlName="username">
+                        </mat-form-field>
+                        <mat-form-field  class="field" appearance="outline">
+                          <mat-label>Password</mat-label>
+                          <input matInput type="password" id="passwordS" formControlName="password">
+                        </mat-form-field>
+                      </div>
+                      <button type="submit" [class]="!signUpForm.valid?'disabled':''" class="btn btn-primary btn-block">Next</button>
+                    </form>
+                  </div>
+
+                </div>
+                <div class="row term-polic">
+                  <div class="col">
+                    By signing up, you agree to our Terms . Learn how we collect, use and share your data in our Data Policy and how we use cookies and similar technology in our Cookies Policy .
+                  </div>
+                </div>
+
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="row sign-up justify-content-center">
+        <div class="col">
+          <div class="card">
+            <div class="card-body" *ngIf="signInMode">
+              <p>Don't have an account?<span (click)="onChangeMode()"> Sign up</span></p>
+            </div>
+            <div class="card-body" *ngIf="!signInMode">
+              <p>Have an account? <span (click)="onChangeMode()"> Sign in</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row apps justify-content-center">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h4>Get the app</h4>
+              <ul class="nav nav-pills  nav-justified">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="../../assets/images/apple.png" alt="">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="../../assets/images/android.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

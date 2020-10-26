@@ -51,13 +51,5 @@ export class LoginComponent implements OnInit {
   onChangeMode(){
     this.signInMode=!this.signInMode
   }
-  onResize(event){
-    console.log("Width: " + event.target.innerWidth);
-    if( event.target.innerWidth < 1030){
-      this.widthImgShow=false
-    }
-    else{
-      this.widthImgShow=true;
-    }
-  }
+
 }
