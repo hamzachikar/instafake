@@ -211,8 +211,10 @@
       }
     }
     @media screen and (max-width:1300px) {
+      .login-col{
+        padding-top: 10px;
+      }
       .blank-col{
-
         .img-col{
           left:15%;
           width: fit-content;
@@ -238,6 +240,11 @@
           font-weight: 500;
           padding: 0;
 
+        }
+        @media screen and (max-width:1200px){
+          .disabled{
+            position: relative;
+          }
         }
         .nav{
           width:fit-content;
